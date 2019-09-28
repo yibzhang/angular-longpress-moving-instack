@@ -1,0 +1,10 @@
+<div style="height: 50px; width: 185px; background: grey; position: absolute; top: 0; left: 0;">
+ 
+  <app-moving-block *ngFor="let value of indexArr, let idx=index"
+  [movable]="movable[idx]"
+  [topOffset]="topOffset[idx]"
+  [leftOffset]="leftOffset[idx]"
+  [index]="idx"
+  long-press (onLongPress)="onLongPress($event, idx)"></app-moving-block>
+
+</div>

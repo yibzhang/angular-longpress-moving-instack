@@ -1,0 +1,13 @@
+.moving-block{
+  position: absolute;
+  
+  width: 40px;
+  height: 40px;
+
+  background: blue;
+
+  transition: 0.3s;
+}
+@keyframes blinker { 
+  50% { opacity: 0; }
+}
